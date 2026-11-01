@@ -126,6 +126,16 @@
 
   .ust-etiket { display: inline-block; font-size: 13px; font-weight: 800; color: var(--blue); background: rgba(37, 99, 235, .08); border-radius: 999px; padding: 4px 12px; margin-bottom: 12px; }
 
+  /* Örnek rapor */
+  .rapor { display: grid; grid-template-columns: 1fr 1.2fr; gap: 36px; align-items: center; }
+  @media (max-width: 860px) { .rapor { grid-template-columns: 1fr; } }
+  .sayfalar { display: flex; gap: 14px; justify-content: center; }
+  .sayfalar img { width: 31%; max-width: 190px; border-radius: 10px; box-shadow: 0 10px 28px rgba(15, 23, 42, .18); border: 1px solid var(--line); background: #fff; }
+  .sayfalar img:nth-child(2) { transform: translateY(-14px); }
+  .indir { display: inline-flex; align-items: center; gap: 10px; background: var(--blue); color: #fff; text-decoration: none; font-weight: 700; border-radius: 14px; padding: 14px 22px; margin-top: 8px; }
+  .indir svg { width: 22px; height: 22px; }
+  .indir small { font-weight: 500; opacity: .85; }
+
   .yasal { font-size: 14px; color: var(--muted); border-left: 3px solid var(--blue); padding: 10px 16px; background: var(--surface); border-radius: 0 12px 12px 0; }
 
   footer { background: var(--night); color: rgba(255, 255, 255, .7); padding: 36px 0; font-size: 15px; }
@@ -144,6 +154,7 @@
     <nav>
       <a class="ikincil" href="#ozellikler">Özellikler</a>
       <a class="ikincil" href="#analiz">Analiz</a>
+      <a class="ikincil" href="#ornek-rapor">Örnek rapor</a>
       <a class="ikincil" href="#gizlilik">Gizlilik</a>
       <a href="#sss">SSS</a>
     </nav>
@@ -167,6 +178,7 @@
           <span><small>Yakında</small>Google Play</span>
         </span>
       </div>
+      <p class="note"><a href="#ornek-rapor" style="color:#93C5FD;font-weight:700">Örnek PDF raporu inceleyin →</a></p>
       <p class="note">Yorumlar genel kabul görmüş analiz yöntemleriyle üretilir; bilgilendirme amaçlıdır, hiçbir hukuki veya mali sorumluluk kabul edilmez.</p>
     </div>
     <div>
@@ -243,6 +255,25 @@
       <div class="satir"><span>İşletme sermayesi</span><span class="seviye dikkat">Yüksek</span></div>
       <div class="satir"><span>Talep ve faaliyet kaldıracı</span><span class="seviye guclu">Düşük</span></div>
       <p style="margin:14px 0 0;font-size:15px">"Faizler 10 puan artarsa yıllık faiz yükü 715 bin ₺ artar; bu, bugünkü faaliyet kârının %72'si."</p>
+    </div>
+  </div>
+</section>
+
+<section id="ornek-rapor" class="gizlilik">
+  <div class="wrap rapor">
+    <div class="sayfalar">
+      <img src="/ornek/kapak.jpg" alt="Örnek rapor kapağı" loading="lazy">
+      <img src="/ornek/tablo.jpg" alt="Örnek rapor: çok dönemli bilanço ve gelir tablosu" loading="lazy">
+      <img src="/ornek/analiz.jpg" alt="Örnek rapor: risk haritası ve stres testleri" loading="lazy">
+    </div>
+    <div>
+      <h2>Örnek raporu indirin</h2>
+      <p class="sub" style="margin-bottom:14px">İki hayali şirketin ayrı raporları ve grup toplamı tek PDF'te: kapak, çok dönemli bilanço ve gelir tablosu, oranlar, risk haritası, stres testleri, patronun soruları ve bulgular.</p>
+      <a class="indir" href="/ornek/Bilanly_ornek_rapor.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+        <span>Örnek raporu indir <small>(PDF · 17 sayfa · 310 KB)</small></span>
+      </a>
+      <p style="font-size:14px;color:var(--muted);margin:12px 0 0">Rapordaki şirketler ve rakamlar hayalidir; uygulamadaki "Örnek veriyle dene" verileriyle hazırlanmıştır.</p>
     </div>
   </div>
 </section>
