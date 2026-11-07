@@ -23,4 +23,25 @@
   </url>
   <url><loc>https://bilanly.app/gizlilik/</loc></url>
   <url><loc>https://bilanly.app/kosullar/</loc></url>
+  <url>
+    <loc>https://bilanly.app/destek/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bilanly.app/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bilanly.app/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bilanly.app/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bilanly.app/en/support/"/>
+  </url>
+  <url>
+    <loc>https://bilanly.app/en/support/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bilanly.app/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bilanly.app/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bilanly.app/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bilanly.app/en/support/"/>
+  </url>
+  <url>
+    <loc>https://bilanly.app/fr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bilanly.app/destek/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bilanly.app/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bilanly.app/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bilanly.app/en/support/"/>
+  </url>
 </urlset>
