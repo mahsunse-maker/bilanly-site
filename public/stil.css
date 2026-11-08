@@ -125,6 +125,16 @@ details p { color: var(--muted); margin: 10px 0 0; }
 
 .yasal { font-size: 14px; color: var(--muted); border-left: 3px solid var(--blue); padding: 10px 16px; background: var(--surface); border-radius: 0 12px 12px 0; }
 
+/* Diğer uygulamalarımız (kardeş uygulamalar; Vadelio, Vitrinly, Endeksly sitelerinde de var) */
+.diger { padding: 40px 0 44px; border-top: 1px solid var(--line); }
+.diger h2 { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; line-height: 1.4; }
+.uygulamalar { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 12px; }
+.uyg { display: flex; align-items: center; gap: 12px; min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 12px 14px; text-decoration: none; color: var(--ink); }
+.uyg:hover { border-color: var(--blue); }
+.uyg img { width: 44px; height: 44px; border-radius: 11px; flex: none; }
+.uyg b { display: block; font-size: 16px; }
+.uyg span { display: block; font-size: 13px; color: var(--muted); line-height: 1.35; }
+
 footer { background: var(--night); color: rgba(255, 255, 255, .7); padding: 36px 0; font-size: 15px; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: space-between; }
 footer img { height: 30px; }
