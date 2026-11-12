@@ -1,5 +1,5 @@
 // Telefondaki ekranlar 3,5 saniyede bir değişir; noktalarla seçilebilir.
-const resimler = [...document.querySelectorAll('.screen img')];
+const resimler = [...document.querySelectorAll('.hero .screen img')];
 const noktalar = document.querySelector('.dots');
 let sira = 0, zamanlayici;
 resimler.forEach((r, i) => {

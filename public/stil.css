@@ -141,3 +141,26 @@ footer img { height: 30px; }
 footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
 footer a { text-decoration: none; }
 footer a:hover { color: #fff; }
+
+/* Telefon açık zeminde (Analiz bölümü) */
+.phone.acik-zemin { box-shadow: 0 24px 50px rgba(15, 23, 42, .22); }
+
+/* Cihazlar: açık katlanır telefon, iPad, kapalı katlanır telefon */
+.cihazlar { background: linear-gradient(180deg, var(--bg), var(--soft)); }
+.cihaz-dizi { display: grid; grid-template-columns: 1.75fr 1fr .62fr; gap: 28px; align-items: end; }
+@media (max-width: 900px) { .cihaz-dizi { grid-template-columns: 1.4fr 1fr; } .cihaz-dizi .acik { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .cihaz-dizi { grid-template-columns: 1fr; } }
+.cihaz { margin: 0; text-align: center; }
+.cihaz figcaption { margin-top: 14px; font-size: 15px; color: var(--muted); }
+.cihaz figcaption b { display: block; color: var(--ink); font-size: 16px; }
+.cerceve { position: relative; background: #05070D; margin: 0 auto; box-shadow: 0 24px 50px rgba(15, 23, 42, .22); }
+.cerceve img { display: block; width: 100%; height: auto; background: var(--bg); }
+.acik .cerceve { padding: 10px; border-radius: 26px; }
+.acik .cerceve img { border-radius: 17px; }
+.tablet .cerceve { padding: 12px; border-radius: 28px; max-width: 360px; }
+.tablet .cerceve img { border-radius: 16px; }
+.dis .cerceve { padding: 8px; border-radius: 32px; max-width: 230px; }
+.dis .ekran { position: relative; border-radius: 25px; overflow: hidden; }
+/* Dış ekranın kamerası sağ üstte (466 × 678 puntoluk ekranda merkez 418, 48; çap 36). */
+.dis .kamera { position: absolute; left: 85.8%; top: 4.4%; width: 7.7%; aspect-ratio: 1; border-radius: 50%; background: #05070D; }
+@media (max-width: 900px) { .tablet .cerceve, .dis .cerceve { max-width: 300px; } }
